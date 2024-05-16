@@ -30,7 +30,7 @@ body{
 
 
 
-main, section, footer{
+main, section{
     padding: 0 3.2rem;
 }
 
@@ -86,7 +86,7 @@ section{
 
 .cards h2 {
     color:  var(--color-title-text);
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     font-weight: 900;
     margin-bottom: 2rem;
 }
@@ -96,3 +96,84 @@ section{
     font-weight: 600;
     font-size: 2rem ;
 }
+
+/* estilização do formulário */
+
+.contactme{
+    background-color: var(--color-bg1);    
+}
+
+.contactme h2{
+    margin-top: 8rem;
+    font-size: 3.5rem;
+    color: var(--color-title-text);
+    font-weight: 900;
+}
+
+.contactme form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.4rem;
+    margin-top: 4.5rem;
+}
+
+.contactme input{
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-bg2-text);
+    padding: 1.2rem 5rem;
+    border: 2px solid var(--color-bg2-text);
+    border-radius: 1.6rem;
+}
+
+.contactme input:first-child{
+    background-image: url(./assets/person.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 1.5rem;
+}
+
+.contactme input:nth-child(2){
+    background-image: url(./assets/at.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 1.5rem;
+}
+
+.contactme textarea{
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1.6rem;
+    height: 15rem;
+    color: var(--color-bg2-text);
+    border: 2px solid var(--color-bg2-text);
+    border-radius: 1.6rem;
+}
+
+.contactme button{
+   background-color: var(--color-bg2-text); 
+   color: var(--color-bg-cards);
+   font-family: "Mulish", sans-serif;
+   font-optical-sizing: auto;
+   font-size: 1.4rem;
+   line-height: 2.4rem;
+   font-weight: 700;
+   padding: 1rem;
+   border-radius: 1.6rem;
+   width: 45%;
+   margin-bottom: 6.5rem;
+}
+
+footer{
+    background-color: var(--color-bg2-text);
+    padding: 3.2rem 1.6rem;
+    text-align: center;
+    color: var(--color-bg-cards);
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
