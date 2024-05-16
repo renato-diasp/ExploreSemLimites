@@ -28,8 +28,6 @@ body{
     grid-template-rows: repeat(4, max-content);
 }
 
-
-
 main, section{
     padding: 0 3.2rem;
 }
@@ -68,7 +66,7 @@ main div img{
 
 /* estilização das seções planetas */
 
-section{
+.planets{
     background-color: var(--color-bg2-text);
 }
 
@@ -128,7 +126,7 @@ section{
     border-radius: 1.6rem;
 }
 
-.contactme input:first-child{
+.contactme input:nth-child(1){
     background-image: url(./assets/person.svg);
     background-repeat: no-repeat;
     background-position: left;
@@ -168,6 +166,11 @@ section{
    margin-bottom: 6.5rem;
 }
 
+#hidden-image{
+    display: none;
+}
+
+/* estilização do rodapé */
 footer{
     background-color: var(--color-bg2-text);
     padding: 3.2rem 1.6rem;
@@ -177,3 +180,71 @@ footer{
     font-weight: 600;
 }
 
+/* ajuste para telas maiores */
+
+@media (min-width: 768px){
+    /* estilização principal */
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2.8rem;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 10rem;
+    }
+
+    main img:nth-child(1){
+        width: 45%;  
+        
+    }
+
+    main div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 55%;
+        text-align: left; 
+        height: 70rem;
+        padding-left: 5rem; 
+        margin: 0;       
+    }
+
+    main div h1{
+        margin-top: 31rem;
+        font-size: 6rem;
+    }
+
+    main div p{
+       font-size: 3.2rem; 
+    }
+
+    main div img{
+        width: 40rem;
+        margin-top: 18rem;
+        margin-left: -15rem;       
+    }
+
+    /* estilização das seções planetas */
+    .planets{
+        display: flex;
+        gap: 20rem;
+        justify-content: center;
+    }
+
+    .cards{
+        width: 37rem;
+        margin: 5.2rem 0;
+    }
+
+   #bg{
+    background-color: var(--color-bg1);
+    background-image: url(./assets/stars.png);
+    background-repeat: no-repeat;
+    background-position: right;
+   }
+   
+   .contactme{
+    width: 50%;
+    margin-left: 10rem;
+   }
+}
