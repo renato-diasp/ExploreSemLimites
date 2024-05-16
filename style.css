@@ -1,1 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+/* configurações gerais e variáveis */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+    font-size: 62.5%;
+    --color-bg1: #F9F4FB;
+    --color-bg2-text: #312D64;
+    --color-bg-cards: #fff;
+    --color-title-text: #B52184;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: repeat(4, max-content);
+}
+
+
+
+main, section, footer{
+    padding: 0 3.2rem;
+}
+
+/* estilização da parte principal */
+
+main{
+    text-align: center;
+    background-color: var(--color-bg1);
+}
+
+main img{
+    width: 100%;
+}
+
+main h1{
+   color: var(--color-title-text);
+   font-size: 3.2rem; 
+   font-weight: 900;
+}
+
+main p {
+   color: var(--color-bg2-text); 
+   font-weight: 600;
+   font-size: 2rem;
+}
+
+main div{
+    margin-top: 2rem;
+}
+
+main div img{
+    margin-top: 3.5rem;
+    margin-bottom: 9.5rem;
+}
+
+/* estilização das seções planetas */
+
+section{
+    background-color: var(--color-bg2-text);
+}
+
+.cards{
+    background-color: var(--color-bg-cards);
+    width: 35rem;
+    padding: 2.65rem;
+    margin: 5.2rem auto;
+    border-radius: 2rem;
+}
+
+.cards img{
+    margin-bottom: 3.5rem;
+}
+
+.cards h2 {
+    color:  var(--color-title-text);
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+.cards p {
+    color: var(--color-bg2-text);
+    font-weight: 600;
+    font-size: 2rem ;
+}
