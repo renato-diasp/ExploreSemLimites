@@ -97,6 +97,10 @@ main div img{
 
 /* estilização do formulário */
 
+#bg{
+    background-color: var(--color-bg1);
+   }
+
 .contactme{
     background-color: var(--color-bg1);    
 }
@@ -237,7 +241,6 @@ footer{
     }
 
    #bg{
-    background-color: var(--color-bg1);
     background-image: url(./assets/stars.png);
     background-repeat: no-repeat;
     background-position: right;
